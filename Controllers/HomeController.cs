@@ -16,6 +16,7 @@ namespace FirstResponsiveWebAppWells.Controllers
         public IActionResult Index()
         {
             ViewBag.Age = 0;
+            ViewBag.Name = "unknow";
             return View();
         }
         [HttpPost]
@@ -29,7 +30,7 @@ namespace FirstResponsiveWebAppWells.Controllers
             {
                 ViewBag.Age = 0;
             }
-            
+            ViewBag.Name = model.Name;
             return View(model);
         }
 
