@@ -1,0 +1,46 @@
+﻿@model AgeCalculatorModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <h1>Age Calculator</h1>
+
+    <!--start of form-->
+    <form asp-action="Index" method="post">
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <!--where user inputs their name-->
+        <div>
+            <label asp-for="Name" class="form-label">What is your name?</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <!--where user inputs the month they were born-->
+        <div>
+            <label asp-for="BirthMonth" class="form-label">What month were you born?(1-12)</label>
+            <input asp-for="BirthMonth" class="form-control" />
+        </div>
+        <!--where user inputs the day they were born-->
+        <div>
+            <label asp-for="BirthDay" class="form-label">What day were you born?(1-31)</label>
+            <input asp-for="BirthDay" class="form-control" />
+        </div>
+        <!--where user inputs the year they were born-->
+        <div>
+            <label asp-for="BirthYear" class="form-label">What year were you born?</label>
+            <input asp-for="BirthYear" class="form-control" />
+        </div>
+        <!--Outputs their age-->
+        <div class="row mb-3">
+            <label class="col-form-label col-md-2 mt-2">Your Current Age:</label>
+            <div class="col-md-10 mt-3">
+                <input value="@ViewBag.Age.ToString()" />
+            </div>
+        </div>
+        <!--clear and submit buttons-->
+        <button type="submit" class="me-3">Calculate</button>
+        <a asp-action="Index">Clear</a>
+
+      
+
+    </form>
+</div>
