@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstResponsiveWebAppWells", "FirstResponsiveWebAppWells.csproj", "{0407CC96-3F80-41C2-941D-D492C7498EA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstResponsiveWebAppWells", "FirstResponsiveWebAppWells.csproj", "{0407CC96-3F80-41C2-941D-D492C7498EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeCalulatorTest", "..\AgeCalulatorTest\AgeCalulatorTest.csproj", "{75D45887-CC86-4D5E-B1BE-DBC16BFEF9E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0407CC96-3F80-41C2-941D-D492C7498EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0407CC96-3F80-41C2-941D-D492C7498EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0407CC96-3F80-41C2-941D-D492C7498EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D45887-CC86-4D5E-B1BE-DBC16BFEF9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D45887-CC86-4D5E-B1BE-DBC16BFEF9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D45887-CC86-4D5E-B1BE-DBC16BFEF9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D45887-CC86-4D5E-B1BE-DBC16BFEF9E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
